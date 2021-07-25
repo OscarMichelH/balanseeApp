@@ -1,0 +1,7 @@
+{
+  "name": "balanseeApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
