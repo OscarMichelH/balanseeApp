@@ -10,7 +10,7 @@ const Tab2: React.FC = () => {
   const [assets, setAssets] = useState<Asset[]>([]);
     useIonViewDidEnter(async () => {
         const result = await fetch('http://localhost:3000/assets.json', {
-            headers: { 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2Mjc5NDE3OTYsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20ifQ.U70-jApvbYB67pAINYySmef0mUNBjQ7Kf3srKmQa6_o' }
+            headers: { 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2Mjg0NzgzMjgsImVtYWlsIjoib3NjYXJtaWNoZWxoQGdtYWlsLmNvbSJ9.XmdptL-nn1wIn68Ky1ke2dT5cqF07xE1zoJeHNCVxko' }
         });
         const data = await result.json();
         setAssets(data.assets.concat(data.total));
